@@ -1,6 +1,6 @@
 from flask import Flask, g, request, jsonify
 from werkzeug.security import generate_password_hash, check_password_hash
-from tables.user import User
+from user.user import User
 import psycopg2
 import json
 
