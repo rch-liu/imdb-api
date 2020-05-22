@@ -1,8 +1,9 @@
-## IMDB API
+# IMDB API
 ### Setup 
 You must have PostgreSQL installed and started on your machine. To connect to PostgreSQL, execute:
 ```
 pg_ctl -D /usr/local/var/postgres/ start
+psql -d postgres
 ```
 where `/usr/local/var/postgres` is the file system location of the database configuration files when you installed PostgreSQL.
 
@@ -20,10 +21,9 @@ to create the `testdb` database.
 
 Next, execute:
 ```
-python setup.py
 python api.py
 ```
-to populate our `movies` table and expose the API on port 5000.
+to populate tables and expose the API on port 5000.
 
 
 ### Implementation
@@ -31,7 +31,6 @@ To setup the database, run
 ```bash
 python createtables.py # initializes all empty tables
 ```
-**setup.py has been rewritten to createtables.py.**
 
 To populate the database with production data, run
 ```bash
