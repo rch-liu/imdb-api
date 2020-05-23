@@ -3,7 +3,7 @@
 import psycopg2
 
 # Open and read the file as a single buffer
-fd = open('createtables.sql', 'r')
+fd = open('createTables.sql', 'r')
 sqlFile = fd.read()
 fd.close()
 
