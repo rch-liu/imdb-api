@@ -2,7 +2,7 @@ import psycopg2
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
 # Open and read the file as a single bufferq
-fd = open('test-sample.sql', 'r')
+fd = open('testSample.sql', 'r')
 sqlFile = fd.read()
 fd.close()
 

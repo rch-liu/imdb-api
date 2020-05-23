@@ -29,7 +29,7 @@ to populate tables and expose the API on port 5000.
 ### Implementation
 To setup the database, run
 ```bash
-python createtables.py # initializes all empty tables
+python createTables.py # initializes all empty tables
 ```
 
 To populate the database with production data, run
@@ -39,7 +39,7 @@ python populateTables.py # populates empty tables with production data
 
 To delete all tables, run
 ```bash
-python deletetables.py
+python deleteTables.py
 ```
 
 Launching the api is still the same: `python api.py`.
