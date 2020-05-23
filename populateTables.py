@@ -4,11 +4,11 @@ import psycopg2
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
 # Open and read the file as a single bufferq
-fd_metadata = open('./production_data/metadata_out.csv', 'r')
-fd_films = open('./production_data/films_out.csv', 'r')
-fd_ratings = open('./production_data/ratings_out.csv', 'r')
-fd_names = open('./production_data/names_out.csv', 'r')
-fd_crew = open('./production_data/crew_out.csv', 'r')
+fd_metadata = open('./production_data/metadata.csv', 'r')
+fd_films = open('./production_data/films.csv', 'r')
+fd_ratings = open('./production_data/ratings.csv', 'r')
+fd_names = open('./production_data/names.csv', 'r')
+fd_crew = open('./production_data/crew.csv', 'r')
 
 # Connect to the PostgreSQL server
 conn = psycopg2.connect("dbname=testdb")
